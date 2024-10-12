@@ -6,9 +6,9 @@ Welcome to the Enhanced OCR Toolkit! This Python-based tool enhances your abilit
 # 📜 Features
 
 * 🖼️ Image Preprocessing: Clean up and enhance images to improve OCR accuracy.
-* 🔍 OCR Support: Extract text from images using popular Python OCR libraries, including pytesseract and EasyOCR.
 * 💾 TIFF Conversion: Convert processed images to high-quality TIFF format for further processing.
 * ⚙️ Customizable Parameters: Fine-tune blur radius, contrast, and other preprocessing parameters to get the best results.
+* 🔍 OCR Support: Extract text from images using popular Python OCR libraries, including pytesseract and EasyOCR.
 
 
 # 🚀 How It Works
