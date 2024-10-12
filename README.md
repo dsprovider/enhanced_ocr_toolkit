@@ -96,6 +96,9 @@ For pytesseract, ensure that you have Tesseract OCR installed on your machine (h
 
 # 🔍 Future Improvements
 
+* **🛠️ Advanced Image Preprocessing Techniques:** Implement more sophisticated methods such as noise reduction and edge detection to further enhance image quality and OCR accuracy.
+
+* **📊 Image Clustering:** Develop a more specialized approach for processing different types of images. This could include custom workflows for recognizing text from specific categories, such as: driving license plates, ID cards, billboards, receipts, etc
 
 
 # 📄 License
