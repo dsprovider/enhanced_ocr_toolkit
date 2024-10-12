@@ -40,20 +40,22 @@ To use this toolkit, you need Python 3.x installed along with a few required lib
 
 - **Clone this repository**
   
-git clone https://github.com/dsprovider/enhanced_ocr_toolkit.git
+    git clone https://github.com/dsprovider/enhanced_ocr_toolkit.git
 
 - **Navigate to the project directory**
 
-cd enhanced_ocr_toolkit
+    cd enhanced_ocr_toolkit
 
 - **Install the required dependencies**
   
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 
 # Additional Setup
 
-For pytesseract, ensure that you have Tesseract OCR installed on your machine (https://tesseract-ocr.github.io/tessdoc/Installation.html). Installed version: v5.4.0.20240606
+For pytesseract, ensure that you have Tesseract OCR installed on your machine (https://tesseract-ocr.github.io/tessdoc/Installation.html)
+
+**Installed version: v5.4.0.20240606**
 
 *pytesseract.pytesseract.tesseract_cmd = r'C:\path_to_tesseract\tesseract.exe'*
 
