@@ -36,6 +36,20 @@ Once the images are preprocessed, the toolkit applies OCR to extract text using 
 
 # 🔧 Installation
 
+To use this toolkit, you need Python 3.x installed along with a few required libraries. Follow these steps to set up the environment:
+
+- Clone this repository
+  
+git clone https://github.com/dsprovider/enhanced_ocr_toolkit.git
+
+- Navigate to the project directory
+
+cd enhanced_ocr_toolkit
+
+- Install the required dependencies
+  
+pip install -r requirements.txt
+
 
 # Additional Setup
 
