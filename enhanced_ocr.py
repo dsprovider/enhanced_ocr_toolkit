@@ -15,7 +15,7 @@ import pytesseract
 # ================================================================================================================================================
 
 # Set the tesseract_cmd to your Tesseract installation path
-pytesseract.pytesseract.tesseract_cmd = r'C:\Users\andres\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'  # Adjust the path as needed
+pytesseract.pytesseract.tesseract_cmd = r'<path_to_tesseract.exe>'  # Adjust the path as needed
 
 # ================================================================================================================================================
 
@@ -182,8 +182,8 @@ def main():
     # Initialize EasyOCR reader
     # reader = easyocr.Reader(['en'])
 
-    directory = r"C:\Users\andres\Fiverr\01. Testing\26. Enhanced OCR Toolkit\images"
-    out_directory = r"C:\Users\andres\Fiverr\01. Testing\26. Enhanced OCR Toolkit\tiff"
+    directory = r"<images_input_folder>"
+    out_directory = r"<preprocessed_images_output_folder>"
 
     for filename in os.listdir(directory):
         image_filepath = os.path.join(directory, filename)
