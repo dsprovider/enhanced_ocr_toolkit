@@ -51,7 +51,7 @@ To use this toolkit, you need Python 3.x installed along with a few required lib
     pip install -r requirements.txt
 
 
-# Additional Setup
+# 📦 Additional Setup
 
 For pytesseract, ensure that you have Tesseract OCR installed on your machine (https://tesseract-ocr.github.io/tessdoc/Installation.html)
 
@@ -62,10 +62,40 @@ For pytesseract, ensure that you have Tesseract OCR installed on your machine (h
 
 # 📂 Usage
 
+1. Place the images you want to process in the input images folder.
 
-# Customizing Preprocessing Parameters
+2. Run the script to preprocess the images and perform OCR.
+
+   python enhanced_ocr.py
+
+3. The enhanced images will be saved in the output images directory in TIFF format.
 
 
+# ⚙️ Customizing Preprocessing Parameters
+
+**Customizable Parameters**
+
+* *Function: def enhance_contrast(image, factor)*
+
+    - factor < 1.0: Decreases the contrast of the image
+ 
+    - factor = 1.0: Leaves the image unchanged (default setting)
+ 
+    - factor > 1.0: Increases the contrast of the image
+
+* *Function: def apply_blur(image, blur_radius)*
+
+    - blur_radius = 0: No blur is applied
+      
+    - blur_radius (0.1 to 2.0): Light blur
+      
+    - blur_radius (2.0 to 5.0): Moderate blur
+      
+    - blur_radius > 5.0: Heavy blur
+
+    factor < 1.0 - Decreases the contrast of the image
+    factor = 1.0 - Leaves the image unchanged. This is the default factor.
+    factor > 1.0 - Increases the contrast of the image
 
 # 🔍 Future Improvements
 
