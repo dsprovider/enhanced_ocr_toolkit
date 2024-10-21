@@ -12,7 +12,7 @@ Welcome to the Enhanced OCR Toolkit! This Python-based tool enhances your abilit
 
 # 🚀 How It Works
 
-This toolkit follows a two-step process:
+This toolkit follows a three-step process:
 
 1️⃣ Image Preprocessing
 
