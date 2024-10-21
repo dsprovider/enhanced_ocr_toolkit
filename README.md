@@ -1,12 +1,11 @@
 # 🔍 Enhanced OCR Toolkit 📄✨
 
-Welcome to the Enhanced OCR Toolkit! This Python-based tool enhances your ability to extract text from images by improving the image quality and performing OCR (Optical Character Recognition). It operates in two major phases: image preprocessing and image OCR. The tool integrates powerful libraries like Pillow, OpenCV, pytesseract, and optionally, EasyOCR, to deliver accurate results.
+Welcome to the Enhanced OCR Toolkit! This Python-based tool enhances your ability to extract text from images by improving the image quality and performing OCR (Optical Character Recognition). It operates in two major phases: image preprocessing and image OCR. The tool integrates powerful libraries like Pillow, OpenCV, pytesseract, and EasyOCR, to deliver accurate results.
 
 
 # 📜 Features
 
 * 🖼️ **Image Preprocessing:** Clean up and enhance images to improve OCR accuracy.
-* 💾 **TIFF Conversion:** Convert processed images to high-quality TIFF format for further processing.
 * ⚙️ **Customizable Parameters:** Fine-tune blur radius, contrast, and other preprocessing parameters to get the best results.
 * 🔍 **OCR Support:** Extract text from images using popular Python OCR libraries, including pytesseract and EasyOCR.
 
@@ -74,16 +73,28 @@ For pytesseract, ensure that you have Tesseract OCR installed on your machine (h
 *pytesseract.pytesseract.tesseract_cmd = r'C:\path_to_tesseract\tesseract.exe'*
 
 
-
 # 📂 Usage
 
-1. Place the images you want to process in the input images folder.
+This tool offers flexibility in providing input images for OCR processing and exporting the results. You can provide the input images in two different ways via the command prompt:
 
-2. Run the script to preprocess the images and perform OCR.
+**Local Processing**
 
-   python enhanced_ocr.py
+Supply a text file that contains the full file paths of the images stored on your local machine. Each image path should be listed on a new line. This method allows you to process images that are already available on your device.
 
-3. The enhanced images will be saved in the output images directory in TIFF format.
+*/path/to/image1.jpg*
+*/path/to/image2.png*
+*/path/to/image3.tiff*
+
+
+**Remote Processing (Image URLs)**
+
+Provide a text file that contains a list of URLs for images hosted on a server. Each URL should be on a new line. This option allows you to process images directly from their server location without downloading them manually.
+
+*https://example.com/images/image1.jpg*
+*https://example.com/images/image2.png*
+*https://example.com/images/image3.tiff*
+
+After specifying the images input file, you will be prompted to enter the folder path where the cleaned OCR results will be exported as a CSV file. This file will contain the extracted and cleaned text from the images. Once the process is complete, a CSV file with the extracted OCR text will be generated in the specified folder.
 
 
 # ⚙️ Customizing Preprocessing Parameters
