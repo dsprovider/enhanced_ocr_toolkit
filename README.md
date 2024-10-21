@@ -82,7 +82,9 @@ This tool offers flexibility in providing input images for OCR processing and ex
 Supply a text file that contains the full file paths of the images stored on your local machine. Each image path should be listed on a new line. This method allows you to process images that are already available on your device.
 
 */path/to/image1.jpg*
+
 */path/to/image2.png*
+
 */path/to/image3.tiff*
 
 
@@ -91,7 +93,9 @@ Supply a text file that contains the full file paths of the images stored on you
 Provide a text file that contains a list of URLs for images hosted on a server. Each URL should be on a new line. This option allows you to process images directly from their server location without downloading them manually.
 
 *https://example.com/images/image1.jpg*
+
 *https://example.com/images/image2.png*
+
 *https://example.com/images/image3.tiff*
 
 After specifying the images input file, you will be prompted to enter the folder path where the cleaned OCR results will be exported as a CSV file. This file will contain the extracted and cleaned text from the images. Once the process is complete, a CSV file with the extracted OCR text will be generated in the specified folder.
