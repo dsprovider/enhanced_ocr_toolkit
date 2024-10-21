@@ -19,10 +19,11 @@ This toolkit follows a two-step process:
 
 The preprocessing phase helps improve the quality of the input images to increase OCR accuracy. This phase consists of several sub-steps:
 
-1. **Grayscale Conversion 🎨:** Images are converted to grayscale to simplify further processing.
-2. **Gaussian Blur 🌫️:** Optional blur is applied to smooth the image and reduce noise.
-3. **Contrast Enhancement ⚡:** The image contrast is boosted to make text stand out.
-4. **Thresholding 🌓:** (Optional) Converts the image to a binary format (black & white) for easier OCR.
+1. **Orientation Check 🔄:** The image is analyzed for its orientation, and if it is rotated, it is corrected to an upright position before further processing.
+2. **Grayscale Conversion 🎨:** Images are converted to grayscale to simplify further processing.
+3. **Gaussian Blur 🌫️:** Optional blur is applied to smooth the image and reduce noise.
+4. **Contrast Enhancement ⚡:** The image contrast is boosted to make text stand out.
+5. **Thresholding 🌓:** (Optional) Converts the image to a binary format (black & white) for easier OCR.
 
 All preprocessing steps are done using **Pillow** and **OpenCV**.
 
@@ -32,6 +33,19 @@ Once the images are preprocessed, the toolkit applies OCR to extract text using 
 
 * **pytesseract 🖥️:** An open-source OCR engine for recognizing text in images.
 * **EasyOCR 🤖:** A deep learning-based OCR library with multilingual support.
+
+**3️⃣ Text Cleaning**
+
+After extracting the raw text through OCR, a cleaning process is applied to enhance the accuracy and readability of the results. The following steps are executed in the text cleaning phase:
+
+* **Line Splitting 📝**: The raw OCR text is split into individual lines for further processing.
+* **Noise Filtering 🚫**: Each line is evaluated for potential noise. Lines are removed if they:
+  - Are empty or contain only whitespace.
+  - Consist entirely of short segments (less than 4 characters).
+  - Contain only a single character.
+
+* **Symbol Removal 🔧**: Unwanted symbols, such as pipe (|) characters, are removed from each line.
+* **Reconstruction 🔄**: The cleaned lines are reassembled into a text block, with proper spacing.
 
 
 # 🔧 Installation
@@ -58,6 +72,7 @@ For pytesseract, ensure that you have Tesseract OCR installed on your machine (h
 **Installed version: v5.4.0.20240606**
 
 *pytesseract.pytesseract.tesseract_cmd = r'C:\path_to_tesseract\tesseract.exe'*
+
 
 
 # 📂 Usage
