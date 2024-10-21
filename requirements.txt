@@ -1,0 +1,11 @@
+torch==2.5.0
+torchvision==0.20.0
+scipy==1.14.1
+requests==2.32.3
+requests-oauthlib==2.0.0
+python-bidi==0.6.3
+pytesseract==0.3.13
+pillow==11.0.0
+opencv-python==4.10.0.84
+opencv-python-headless==4.10.0.84
+numpy==2.1.2
