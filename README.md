@@ -1,6 +1,6 @@
 # 🔍 Enhanced OCR Toolkit 📄✨
 
-Welcome to the Enhanced OCR Toolkit! This Python-based tool enhances your ability to extract text from images by improving the image quality and performing OCR (Optical Character Recognition). It operates in two major phases: image preprocessing and image OCR. The tool integrates powerful libraries like Pillow, OpenCV, pytesseract, and EasyOCR, to deliver accurate results.
+Welcome to the Enhanced OCR Toolkit! This Python-based tool enhances your ability to extract text from images by improving the image quality and performing OCR (Optical Character Recognition). It operates in three major phases: image preprocessing, image OCR and text cleaning. The tool integrates powerful libraries like Pillow, OpenCV, pytesseract and EasyOCR to deliver accurate results.
 
 
 # 📜 Features
